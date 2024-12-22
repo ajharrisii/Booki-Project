@@ -115,3 +115,30 @@ body {
     margin-bottom: 5px;
 }
 
+.navbar {
+    background-color:#ffffff
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar li {
+    float: right;
+}
+
+.navbar a {
+    display: block;
+    color: #040404;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: overline;
+}
+
+.navbar a:hover {
+    color: #0065FC;
+}
