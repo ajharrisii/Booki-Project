@@ -128,17 +128,53 @@ body {
 }
 
 .navbar li {
-    float: right;
+    margin-left: 20px;
+    position: relative;
+}
+
+.navbar li::before {
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background-color: transparent;
+    top: -10px;
+    left: 0;
+    transition: 0.3s;
+}
+
+.navbar li:hover::before {
+    background-color: #0065FC;
 }
 
 .navbar a {
     display: block;
     color: #040404;
     text-align: center;
-    padding: 14px 20px;
-    text-decoration: overline;
+    padding: 10px 14px;
+    text-decoration: none;
+    border-bottom: 3px;
+    white-space: nowrap;
 }
 
 .navbar a:hover {
     color: #0065FC;
+    border-bottom: 3px;
 }
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 70px;
+}
+
+.main-container {
+    color: #000000;
+    font-size: 15px;
+}
+
+.navbar {
+  position: relative;  
+}
+
