@@ -166,7 +166,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 70px;
+    padding: 20px 0px;
 }
 
 .main-container {
@@ -181,4 +181,8 @@ header {
 .accommodation {
     font-size: 20px;
     font-weight: bold;
+}
+
+#logo {
+    width: 3%;
 }
