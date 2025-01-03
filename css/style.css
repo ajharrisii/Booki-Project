@@ -226,3 +226,80 @@ margin-bottom: 30px;
     padding: 10px 15px;
     cursor: pointer;
 }
+
+.filter-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    margin-bottom: 20px;
+}
+.filter-container .filter-label {
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+.budget {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border: 2px solid #d9d9d9;
+    border-radius: 25px;
+    padding: 10px 15px;
+    margin-right: 20px;
+}
+
+.family-friendly {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border: 2px solid #d9d9d9;
+    border-radius: 25px;
+    padding: 10px 15px;
+    margin-right: 20px;
+}
+
+.romance {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border: 2px solid #d9d9d9;
+    border-radius: 25px;
+    padding: 10px 15px;
+    margin-right: 20px;
+}
+
+.top-picks {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border: 2px solid #d9d9d9;
+    border-radius: 25px;
+    padding: 10px 15px;
+    margin-right: 20px;
+}
+
+.economy {
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.ff {
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.roma {
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.our-top-picks {
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.booking-info {
+    margin-bottom: 50px;
+}
+
