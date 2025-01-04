@@ -16,6 +16,9 @@
 body {
     display: flex;
     justify-content: center;
+    /*Tablet View
+    max-width: 1440px;
+    margin: 0 auto;*/
 }
 
 .main-container {
@@ -306,14 +309,11 @@ input::placeholder {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    max-width: 1200px;
-    width: 100%;
 }
 
 .hotels {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
 }
 
 .hotels .card {
@@ -322,10 +322,7 @@ input::placeholder {
     margin: 10px;
     border-radius: 20px;
     box-shadow: 0 4px 8px;
-    overflow: hidden;
     width: 250px;
-    box-sizing: border-box;
-    margin-right: 40px;
 }
 
 .hotels img {
