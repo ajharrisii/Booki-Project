@@ -311,6 +311,12 @@ margin-bottom: 30px;
     width: 100%;
 }
 
+.hotels {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
 .hotels .card {
     display: flex;
     flex-direction: column;
@@ -320,6 +326,7 @@ margin-bottom: 30px;
     overflow: hidden;
     width: 250px;
     box-sizing: border-box;
+    margin-right: 40px;
 }
 
 .hotels img {
