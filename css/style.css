@@ -70,12 +70,12 @@ body {
 
 /****** Accommodation ***********/
 .marseille {
-    width: 65%;
+    width: 50%;
 }
 
 /****** Popular ***********/
 .popular {
-    width: 32%;
+    width: 48%;
 }
 
 .popular-title {
@@ -156,7 +156,7 @@ body {
     text-align: center;
     padding: 10px 14px;
     text-decoration: none;
-    border-bottom: 3px;
+    border-bottom: 10px;
     white-space: nowrap;
 }
 
@@ -314,6 +314,8 @@ input::placeholder {
 .hotels {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
 }
 
 .hotels .card {
