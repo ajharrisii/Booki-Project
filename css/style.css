@@ -248,6 +248,27 @@ input::placeholder {
     border-radius: 25px;
     padding: 10px 15px;
     margin-right: 20px;
+    cursor: pointer;
+}
+
+.budget:hover {
+    background-color: #DEEBFF;
+    color: #000000
+}
+
+.filter-container::before {
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background-color: transparent;
+    top: -10px;
+    left: 0;
+    transition: 0.3s;
+}
+
+.filter-container:hover::before {
+    background-color: #DEEBFF;
 }
 
 .family-friendly {
@@ -260,6 +281,11 @@ input::placeholder {
     margin-right: 20px;
 }
 
+.family-friendly:hover {
+    background-color: #DEEBFF;
+    color: #000000
+}
+
 .romance {
     display: flex;
     align-items: center;
@@ -270,6 +296,11 @@ input::placeholder {
     margin-right: 20px;
 }
 
+.romance:hover {
+    background-color: #DEEBFF;
+    color: #000000
+}
+
 .top-picks {
     display: flex;
     align-items: center;
@@ -278,6 +309,11 @@ input::placeholder {
     border-radius: 25px;
     padding: 10px 15px;
     margin-right: 20px;
+}
+
+.top-picks:hover {
+    background-color: #DEEBFF;
+    color: #000000
 }
 
 .economy {
