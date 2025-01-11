@@ -16,7 +16,7 @@
 body {
     display: flex;
     justify-content: center;
-    /*max-width: 1440px;
+    max-width: 1440px;
     margin: 0 auto;*/
 }
 
@@ -69,12 +69,12 @@ body {
 
 /****** Accommodation ***********/
 .marseille {
-    width: 50%;
+    width: 66%;
 }
 
 /****** Popular ***********/
 .popular {
-    width: 48%;
+    width: 33%;
 }
 
 .popular-title {
@@ -350,16 +350,15 @@ input::placeholder {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-bottom: 50px;
+    gap: 40px;
 }
 
 .hotels .card {
     display: flex;
     flex-direction: column;
-    margin: 10px;
     border-radius: 20px;
     box-shadow: 0 4px 8px;
-    width: 250px;
+    width: 238px;
 }
 
 .hotels img {
@@ -410,7 +409,6 @@ input::placeholder {
 .things .card {
     display: flex;
     flex-direction: column;
-    margin: 10px;
     border-radius: 20px;
     box-shadow: 0 4px 8px;
     width: 297.5px;
@@ -434,7 +432,7 @@ input::placeholder {
     justify-content: center;
 }
 
-.footer {
+footer {
     display: flex;
     justify-content: space-between;
     position: relative;
@@ -443,29 +441,38 @@ input::placeholder {
     width: 100%;
     background-color: #F2F2F2;
     color: #000000;
-    padding: 25px;
+}
+
+footer a {
+    display: block;
 }
 
 .about {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
     justify-content: space-between;
     padding: 25px;
 }
 
 .our_accommodation {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
     justify-content: space-between;
     padding: 25px;
 }
 
 .support {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: right;
+    justify-content: space-between;
     padding-right: 25px;
+    padding-top: 20px;
+}
+
+/*For Tablet*/
+@media all and (max-width: 1024px) {
+    body {
+        min-width: 768px;
+    }
+}
+
+/* For Mobile */
+@media all and (max-width: 768px) {
+    body {
+        min-width: 300px;
+    }
 }
