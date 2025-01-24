@@ -61,20 +61,22 @@ body {
 }
 
 .accommodation-and-popular section {
-    background-color: var(--main-bg-color);
-    border-radius: 20px;
     padding: 30px;
     box-sizing: border-box;
 }
 
 /****** Accommodation ***********/
 .paris {
+    border-radius: 20px;
     width: 66%;
+    background-color: #F2F2F2;
 }
 
 /****** Popular ***********/
 .popular {
+    border-radius: 20px;
     width: 33%;
+    background-color: #F2F2F2;
 }
 
 .popular-title {
@@ -470,40 +472,165 @@ footer a {
     body {
         min-width: 768px;
     }
+
+    #logo {
+        width: 10%;
+    }
+
+    .accommodation-and-popular {
+        flex-wrap: wrap;
+    }
+
     .paris {
+        order: 1;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .popular {
+        order: 2;
         width: 100%;
     }
-    .popular {
-        display: inline-block;
-    }
-    .section {
-        flex-direction: column;
-    }
+
+    .popular-cards .card {
+        width: 30%;
+        margin: 10px;
+}
+
+    .things .card {
+    border-radius: 20px;
+    box-shadow: 0 4px 8px;
+    width: 200px;
+    height: 275px;
+}
+    .things img {
+    width: 100%;
+    height: 200px;
+    border-radius: 20px 20px 0 0;
+}
 }
 
 /* For Mobile */
 @media all and (max-width: 430px) {
     body {
         min-width: 320px;
+        margin: 0px;    
+        padding: 0px;
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    #logo {
+        width: 15%
+    }
+
+    .navbar{
+        justify-content: center;
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
+    .navbar li::before {
+        top: unset;
+        background-color: #F2F2F2;
+        bottom: -3px;
+}
+    .heart-of-city {
+        padding-left: 10px;
+    }
+
+    .main-container {
+        padding: 0px;
+    }
+
+    h2 {
+        margin-left: 20px;
+        font-size: 30px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    .search-bar {
+        margin-left: 20px;
     }
     
     .accommodation-and-popular {
         flex-wrap: wrap;
     }
+
     .popular {
         order: 1;
-        width: 100%
-
+        border-radius: 0px;
     }
+
+     .popular-cards .card {
+        width: 95%
+}
+
     .paris {
         order: 2;
+        background-color: #ffffff;
+        width: 100%;
     }
 
     .filter-container {
         flex-wrap: wrap;
+        margin-left: 20px;
     }
 
     .filter-buttons{
         flex-wrap: wrap;
+        gap: 9px;
+    }
+
+    .cbi {
+        font-size: 17px;
+    }
+
+    .booking-info {
+        padding: 0 50px;
+    }
+
+    .hotels .card {
+        border-radius: 20px;
+        box-shadow: 0 4px 8px;
+        width: 335px;
+        height: 220px;
+        margin-left: 20px;
+}
+
+    .hotels img {
+        width: 100%;
+        height: 125px;
+        border-radius: 20px 20px 0 0;
+}
+    .fun {
+        padding: 0 20px;
+    }
+
+    .things .card {
+        border-radius: 20px;
+        box-shadow: 0 4px 8px;
+        width: 335px;
+        height: 207.5px;
+        margin-bottom: 20px;
+        margin-left: 40px;
+}
+    .things img {
+        width: 100%;
+        height: 150px;
+        border-radius: 20px 20px 0 0;
+}
+    footer {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .support {
+        margin-left: 20px;
     }
 }
